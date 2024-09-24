@@ -1,0 +1,19 @@
+{
+  "name": "authui",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.6.1",
+    "eslint": "^9.11.1",
+    "typescript": "^5.6.2"
+  }
+}
