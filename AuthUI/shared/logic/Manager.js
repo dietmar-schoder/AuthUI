@@ -1,3 +1,4 @@
+import { Login } from "../models/Auth.js";
 import { Pages } from "../view/Page.js";
 export class Manager {
     _server;
@@ -25,9 +26,10 @@ export class Manager {
     async getLoginPage(params) {
         let action = params;
         if (action == "POST") {
-            const inputElement = document.getElementById("_email");
-            const inputValue = inputElement.value;
-            console.log(inputValue);
+            const email = document.getElementById("_email").value;
+            const password = document.getElementById("_password").value;
+            const login = new Login(email, password);
+            console.log(JSON.stringify(login));
         }
         return this._page.Login();
     }

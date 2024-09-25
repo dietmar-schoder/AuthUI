@@ -32,9 +32,10 @@ export class Manager {
         let action = params;
 
         if (action == "POST") {
-            const inputElement = document.getElementById("_email") as HTMLInputElement;
-            const inputValue = inputElement.value;
-            console.log(inputValue);
+            const email = (document.getElementById("_email") as HTMLInputElement).value;
+            const password = (document.getElementById("_password") as HTMLInputElement).value;
+            const login = new Login(email, password);
+            console.log(JSON.stringify(login));
         }
 
         return this._page.Login();
