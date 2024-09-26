@@ -1,1 +1,1 @@
-{"root":["./app.ts"],"version":"5.6.2"}
+{"root":["./app.ts","./shared/helpers/configuration.ts","./shared/helpers/datehelper.ts","./shared/logic/authserver.ts","./shared/logic/manager.ts","./shared/models/auth.ts","./shared/view/page.ts","./shared/view/svg.ts","./shared/view/uicalculator.ts"],"version":"5.6.2"}
