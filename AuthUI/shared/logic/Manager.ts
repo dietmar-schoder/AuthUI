@@ -34,8 +34,8 @@ export class Manager {
         if (action == "POST") {
             const email = (document.getElementById("_email") as HTMLInputElement).value;
             const password = (document.getElementById("_password") as HTMLInputElement).value;
-            const login = new Login(email, password);
-            console.log(JSON.stringify(login));
+            const user = await this._server.postLogin(new Login(email, password));
+            console.log(JSON.stringify(user));
         }
 
         return this._page.Login();

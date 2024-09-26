@@ -7,3 +7,9 @@ export class Login {
         this.password = password;
     }
 }
+
+export interface User {
+    id: string;
+    email: string;
+    jwt: string;
+}
